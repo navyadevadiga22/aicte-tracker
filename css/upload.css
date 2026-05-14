@@ -1,0 +1,60 @@
+.page-content{
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8FAFC;
+    min-height: 100vh;
+}
+
+/* Page title */
+.page-content h1{
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+/* Upload box */
+.upload-box{
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Form layout */
+.upload-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels */
+.upload-box label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Inputs */
+.upload-box input,
+.upload-box select{
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Button (SCOPED — very important fix) */
+.upload-box button{
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.upload-box button:hover{
+    background-color: #3B82F6;
+}

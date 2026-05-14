@@ -1,0 +1,89 @@
+.page-content{
+    padding: 30px;
+    background-color: #F8FAFC;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+h1{
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+/* Filters */
+.filters{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filters select,
+.filters input{
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Grid */
+.activities-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card */
+.activity-card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    /* important for consistency */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.activity-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Text */
+.activity-card h3{
+    color: #1E3A8A;
+    margin-bottom: 5px;
+}
+
+.activity-card p{
+    font-size: 14px;
+    color: #6B7280;
+    margin: 0;
+}
+
+/* Button */
+.activity-card button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.activity-card button:hover{
+    background-color: #3B82F6;
+}
+.card:hover,
+.activity-card:hover,
+.upload-box:hover,
+.progress-section:hover,
+.quick-actions:hover,
+.activities-section:hover{
+    box-shadow: 0 0 18px rgba(59,130,246,0.25);
+}
