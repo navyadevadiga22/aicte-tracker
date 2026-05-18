@@ -46,9 +46,49 @@ const buttons = document.querySelectorAll(".activity-card button");
 
 const toast = document.getElementById("toast");
 
+/* LOAD SAVED REGISTRATIONS */
+
+buttons.forEach((button) => {
+
+    const activityId = button.dataset.id;
+
+    const isRegistered =
+        localStorage.getItem(activityId);
+
+    if(isRegistered){
+
+        button.innerText = "Registered";
+
+        button.classList.add("registered");
+
+        button.disabled = true;
+    }
+
+});
+
+/* REGISTER ACTIVITY */
+
 buttons.forEach((button) => {
 
     button.addEventListener("click", () => {
+
+        const activityId = button.dataset.id;
+
+        /* SAVE */
+
+        localStorage.setItem(activityId, "registered");
+
+        /* UPDATE BUTTON */
+
+        button.innerText = "Registered";
+
+        button.classList.add("registered");
+
+        button.disabled = true;
+
+        /* TOAST */
+
+        toast.innerText = "Successfully Registered!";
 
         toast.classList.add("show");
 

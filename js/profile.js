@@ -1,3 +1,26 @@
+/* LOAD SAVED DATA */
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const savedName = localStorage.getItem("profileName");
+    const savedEmail = localStorage.getItem("profileEmail");
+    const savedPhone = localStorage.getItem("profilePhone");
+
+    if(savedName){
+        profileName.innerText = savedName;
+    }
+
+    if(savedEmail){
+        profileEmail.innerText = savedEmail;
+    }
+
+    if(savedPhone){
+        profilePhone.innerText = savedPhone;
+    }
+
+});
+
+
 const editBtn = document.querySelector(".edit-btn");
 
 const modal = document.getElementById("editModal");
@@ -38,6 +61,12 @@ saveBtn.addEventListener("click", () => {
     profileName.innerText = nameInput.value;
     profileEmail.innerText = emailInput.value;
     profilePhone.innerText = phoneInput.value;
+
+    /* SAVE TO LOCAL STORAGE */
+
+    localStorage.setItem("profileName", nameInput.value);
+    localStorage.setItem("profileEmail", emailInput.value);
+    localStorage.setItem("profilePhone", phoneInput.value);
 
     modal.style.display = "none";
 

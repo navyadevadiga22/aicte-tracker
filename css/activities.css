@@ -126,3 +126,7 @@
     opacity: 1;
     transform: translateY(0);
 }
+.activity-card button.registered{
+    background: #16A34A;
+    cursor: default;
+}
