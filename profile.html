@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="profile-info">
-                        <h2>Navya Devadiga</h2>
+                        <h2 id="profileName">Navya Devadiga</h2>
                         <p>4SO24CS139</p>
                         <p>Computer Science Engineering</p>
                     </div>
@@ -72,12 +72,12 @@
 
                     <div class="detail">
                         <span>Email</span>
-                        <p>navya@example.com</p>
+                        <p id="profileEmail">navya@example.com</p>
                     </div>
 
                     <div class="detail">
                         <span>Phone</span>
-                        <p>+91 XXXXX XXXXX</p>
+                        <p id="profilePhone">+91 XXXXX XXXXX</p>
                     </div>
 
                     <div class="detail">
@@ -101,6 +101,26 @@
     </main>
 
 </div>
+<div class="modal" id="editModal">
 
+    <div class="modal-content">
+
+        <h2>Edit Profile</h2>
+
+        <input type="text" id="nameInput" placeholder="Enter name">
+
+        <input type="email" id="emailInput" placeholder="Enter email">
+
+        <input type="text" id="phoneInput" placeholder="Enter phone">
+
+        <div class="modal-buttons">
+            <button id="saveBtn">Save</button>
+            <button id="closeBtn">Cancel</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="js/profile.js"></script>
 </body>
 </html>

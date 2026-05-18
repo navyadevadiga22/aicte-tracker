@@ -84,3 +84,59 @@ h1{
 .edit-btn:hover{
     background-color: #3B82F6;
 }
+.modal{
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0,0,0,0.4);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content{
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    animation: popup 0.3s ease;
+}
+
+.modal-content input{
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+}
+
+.modal-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.modal-buttons button{
+    flex: 1;
+}
+
+@keyframes popup{
+    from{
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
