@@ -1,89 +1,99 @@
-.page-content{
-    padding: 30px;
-    background-color: #F8FAFC;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+.activities-page{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-/* Title */
-h1{
-    color: #1E3A8A;
-    margin-bottom: 20px;
-}
-
-/* Filters */
+/* FILTER BAR */
 .filters{
     display: flex;
     gap: 15px;
-    margin-bottom: 20px;
+    background-color: white;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .filters select,
 .filters input{
-    padding: 10px;
+    flex: 1;
+    padding: 12px 14px;
     border: 1px solid #E5E7EB;
-    border-radius: 8px;
+    border-radius: 10px;
+    background-color: #F9FAFB;
+    font-size: 14px;
     outline: none;
+    transition: 0.3s;
 }
 
-/* Grid */
+.filters select:focus,
+.filters input:focus{
+    border-color: #3B82F6;
+    background-color: white;
+}
+
+/* GRID */
 .activities-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 24px;
 }
 
-/* Card */
+/* CARD */
 .activity-card{
     background: white;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 24px;
+    border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
-    /* important for consistency */
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
 }
 
 .activity-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(59,130,246,0.15);
 }
 
-/* Text */
+/* TITLE */
 .activity-card h3{
     color: #1E3A8A;
-    margin-bottom: 5px;
+    font-size: 22px;
 }
 
+/* TEXT */
 .activity-card p{
-    font-size: 14px;
     color: #6B7280;
-    margin: 0;
+    font-size: 15px;
 }
 
-/* Button */
+/* CATEGORY */
+.category{
+    display: inline-block;
+    width: fit-content;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* BUTTON */
 .activity-card button{
     margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: #1E3A8A;
-    color: white;
-    border-radius: 8px;
+    padding: 12px;
     border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #1E3A8A, #3B82F6);
+    color: white;
+    font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .activity-card button:hover{
-    background-color: #3B82F6;
-}
-.card:hover,
-.activity-card:hover,
-.upload-box:hover,
-.progress-section:hover,
-.quick-actions:hover,
-.activities-section:hover{
-    box-shadow: 0 0 18px rgba(59,130,246,0.25);
+    transform: scale(1.03);
 }

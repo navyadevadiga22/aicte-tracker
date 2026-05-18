@@ -9,6 +9,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/dashboard.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -64,7 +65,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="profile.html">
                     <i class="fa-solid fa-user"></i>
                     Profile
                 </a>
@@ -77,15 +78,24 @@
     <!-- MAIN CONTENT -->
     <main class="main-content">
 
-        <!-- CONTENT WRAPPER -->
-        <div class="page-content">
+        <!-- TOPBAR -->
+        <header class="topbar">
 
             <h1>Available Activities</h1>
+
+            <div class="user-info">
+                <p>Welcome, Navya</p>
+            </div>
+
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="activities-page">
 
             <!-- FILTERS -->
             <div class="filters">
 
-                <select>
+                <select id="categoryFilter">
                     <option>All Categories</option>
                     <option>Technical</option>
                     <option>Workshop</option>
@@ -99,28 +109,48 @@
             <!-- ACTIVITIES GRID -->
             <div class="activities-grid">
 
-                <div class="activity-card">
+                <!-- CARD 1 -->
+                <div class="activity-card" data-category="Workshop">
+
                     <h3>AI Workshop</h3>
-                    <p>Category: Workshop</p>
+
+                    <span class="category">Workshop</span>
+
                     <p>Points: 10</p>
+
                     <p>Date: 20 Jan 2026</p>
+
                     <button>Register</button>
+
                 </div>
 
-                <div class="activity-card">
+                <!-- CARD 2 -->
+                <div class="activity-card" data-category="Technical">
                     <h3>Hackathon 2026</h3>
-                    <p>Category: Technical</p>
+
+                    <span class="category">Technical</span>
+
                     <p>Points: 20</p>
+
                     <p>Date: 5 Feb 2026</p>
+
                     <button>Register</button>
+
                 </div>
 
-                <div class="activity-card">
+                <!-- CARD 3 -->
+                <div class="activity-card" data-category="Social Service">
+
                     <h3>Blood Donation Camp</h3>
-                    <p>Category: Social Service</p>
+
+                    <span class="category">Social Service</span>
+
                     <p>Points: 15</p>
+
                     <p>Date: 10 Feb 2026</p>
+
                     <button>Register</button>
+
                 </div>
 
             </div>
@@ -130,6 +160,6 @@
     </main>
 
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>
