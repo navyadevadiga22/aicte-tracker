@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Certificate</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>APMS</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="activities.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Activities
+                </a>
+            </li>
+
+            <li>
+                <a href="upload.html" class="active">
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                    Certificates
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                   <i class="fa-solid fa-user"></i>
+                   Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <h1>Upload Certificate</h1>
+
+        <div class="upload-box">
+
+            <form>
+
+                <label>Activity Name</label>
+                <input type="text" placeholder="Enter activity name">
+
+                <label>Activity Category</label>
+                <select>
+                    <option>Select category</option>
+                    <option>Technical</option>
+                    <option>Workshop</option>
+                    <option>Social Service</option>
+                </select>
+
+                <label>Upload Certificate</label>
+                <input type="file">
+
+                <label>Remarks (optional)</label>
+                <input type="text" placeholder="Any notes">
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

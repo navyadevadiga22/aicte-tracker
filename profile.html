@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>APMS</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+            <li><a href="activities.html"><i class="fa-solid fa-calendar-days"></i> Activities</a></li>
+            <li><a href="upload.html"><i class="fa-solid fa-file-arrow-up"></i> Certificates</a></li>
+            <li><a href="#" ><i class="fa-solid fa-bell"></i> Notifications</a></li>
+            <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> Profile</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="page-content">
+
+            <h1>My Profile</h1>
+
+            <div class="profile-card">
+
+                <div class="profile-header">
+
+                    <div class="avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-info">
+                        <h2 id="profileName">Navya Devadiga</h2>
+                        <p>4SO24CS139</p>
+                        <p>Computer Science Engineering</p>
+                    </div>
+
+                </div>
+
+                <div class="profile-details">
+
+                    <div class="detail">
+                        <span>Email</span>
+                        <p id="profileEmail">navya@example.com</p>
+                    </div>
+
+                    <div class="detail">
+                        <span>Phone</span>
+                        <p id="profilePhone">+91 XXXXX XXXXX</p>
+                    </div>
+
+                    <div class="detail">
+                        <span>AICTE Points</span>
+                        <p>75 / 100</p>
+                    </div>
+
+                    <div class="detail">
+                        <span>Status</span>
+                        <p class="status">In Progress</p>
+                    </div>
+
+                </div>
+
+                <button class="edit-btn">Edit Profile</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+<div class="modal" id="editModal">
+
+    <div class="modal-content">
+
+        <h2>Edit Profile</h2>
+
+        <input type="text" id="nameInput" placeholder="Enter name">
+
+        <input type="email" id="emailInput" placeholder="Enter email">
+
+        <input type="text" id="phoneInput" placeholder="Enter phone">
+
+        <div class="modal-buttons">
+            <button id="saveBtn">Save</button>
+            <button id="closeBtn">Cancel</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="js/profile.js"></script>
+</body>
+</html>
